@@ -14,7 +14,13 @@ The current best algorithms are:
 
 ### Data Exploration
 
-### Data Cleaning
+### Data Pipeline
+The text based attributes 
+- 'artists'
+- 'id'
+- 'name'
+- 'release_date'
+were dropped from the data before training. The 'artists' attribute could be used via hot ones, but this would lead to a large number of input parameters. The dataset also has a 'year' attribute making 'release_data' somewhat redundent. After the text baised attributes were remove, the data was passed through sklear-learn's standard scaler to normalize the data.
 
 ### Model selection 
 
@@ -50,3 +56,6 @@ For Hyperparameter tuning, I went with Random Forest and DNN models. Below are h
 #### Deep Neural Network (DNN)
 
 ### Generalization 
+
+### Summary and Outlook
+
