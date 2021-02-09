@@ -2,7 +2,7 @@
 working with the [Kaggle Spotify Dataset 1921-2020, 160k+ Tracks dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks)
 
 ## Overview
-This project used Keras/TensorFlow, Scikit-Learn, Pandas, Numpy, and Matplotlib to predict the populatrity of a song based on various attributes. 
+This project uses tool from Keras/TensorFlow, Scikit-Learn, Pandas, Numpy, TensorBoards, and Matplotlib to predict the populatrity of a song based on various attributes. 
 
 By guessing the average of the data set for all songs, a root mean squared error (RMSE) of 21.87 is achived. This can be used a baseline to help understand model preformance.
 
@@ -13,8 +13,27 @@ The current best algorithms are:
 4. Linear SVR - RMSE: 18.524 (0.088)
 
 ## Methods
+Prior to examining the data, duplicate rows were deleted and a testing set was set aside to be used later to measure how well the models generalize. 
 
 ### Data Exploration
+The dataset contains 19 attributes and 172,230 unique entries. 4 of the attributes are text baised which are dropped, 1 is the label (popularity), and the remaining 14 are used as inputs to the models. They are:
+- acousticness    
+- danceability    
+- duration_ms     
+- energy          
+- explicit        
+- instrumentalness
+- key             
+- liveness        
+- loudness        
+- mode            
+- popularity      
+- speechiness     
+- tempo           
+- valence         
+- year   
+
+Looking at the correlation matrix, acousticness, energy, instrumentalness, loudness, and year are most correlated to popularity. The scatter matrix does not show any non linear correlations.
 
 ### Data Pipeline
 The following text based attributes were dropped.
@@ -28,7 +47,6 @@ The 'artists' attribute could be used via hot ones, but this would lead to a lar
 After the text attributes were remove, the data was passed through sklear-learn's standard scaler to normalize the data.
 
 ### Model selection 
-
 Model were given the cleaned data and run with the default hyperparameters. 3 Fold cross validation was used to get preformance (except on DNN), and a single fold was used to show the prediction vs expected error plots. The best models were then used for hyperparameter tuning.
 
 #### Linear Regression - RMSE: 17.172 (0.042)
@@ -53,7 +71,6 @@ The DNN used for testing had 2 hidden layers with 30 nodes and a single output l
 ![alt text](DNN.png)
 
 ### Tuning Hyperparameters
-
 For Hyperparameter tuning, I went with Random Forest and DNN models. Below are how I tuned the hyperparameters
 
 #### Deep Neural Network (DNN)
