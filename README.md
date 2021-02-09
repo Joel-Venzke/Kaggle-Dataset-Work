@@ -78,6 +78,8 @@ The DNN was trained using Keras/TensorFlow and the training was monitored with a
 
 However, the large seperation between the training loss and validation loss suggest all models were overfitting. Therefore I simplified the model with the second grid search: the number of hidden layers = [1, 2, 3], neurons per layer = [10, 20, 30], and learning rate = [1e-3, 1e-4, 1e-5]. 
 
+next up try activation='selu', kernel_initializer='lecun_normal'
+
 #### Random forest regression
 
 ### Generalization 
