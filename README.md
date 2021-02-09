@@ -22,19 +22,23 @@ Model were given the cleaned data and run with the default hyperparameters. 3 Fo
 
 #### Linear Regression - RMSE: 17.172 (0.042)
 The results for linear regression were not much better than guessing the average. It is likely that the data is not linearly seperable.
-<img align="center" src="linear_reg.png" alt="">
+
+![alt text]("linear_reg.png")
 
 
 #### Random forest regression - RMSE: 12.591 (0.035)
 The random forest model preformed the best for initial testing. Could still use some work. 
+
 ![alt text](rand_forest_reg.png)
 
 #### Linear SVR - RMSE: 18.524 (0.088)
 The linear SVR had the worst performance of all models. It looks to be due to over prediction the popularity of unpopular songs. The clear seperation on the left side of the graph suggests the data is not linearly seperable. Using a different kernel might help, but SVR is likely not a good choice.
+
 ![alt text](svr.png)
 
 #### Deep Neural Network (DNN) - RMSE: 13.56 (NA)
 The DNN used for testing had 2 hidden layers with 30 nodes and a single output layer for the regression. The preformance of the training data vs validation data suggests overfitting, but the model prefomed well in comparison to others. 
+
 ![alt text](DNN.png)
 
 ### Tuning Hyperparameters
