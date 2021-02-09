@@ -23,7 +23,7 @@ Model were given the cleaned data and run with the default hyperparameters. 3 Fo
 #### Linear Regression - RMSE: 17.172 (0.042)
 The results for linear regression were not much better than guessing the average. It is likely that the data is not linearly seperable.
 
-![alt text]("linear_reg.png")
+![alt text](linear_reg.png)
 
 
 #### Random forest regression - RMSE: 12.591 (0.035)
