@@ -74,7 +74,9 @@ The DNN used for testing had 2 hidden layers with 30 nodes and a single output l
 For Hyperparameter tuning, I went with Random Forest and DNN models. Below are how I tuned the hyperparameters
 
 #### Deep Neural Network (DNN)
-The DNN was trained using Keras
+The DNN was trained using Keras/TensorFlow and the training was monitored with a TensorBoard. The first round of tuning was a grid search with the number of hidden layers = [1, 2, 3], neurons per layer = [30, 100, 200], and learning rate = [1e-3, 1e-4, 1e-5]. The best model was 3 hidden layers, 200 neurons per layer and a learning rate of 1e-4 with a RMSE=13.055. 
+
+However, the large seperation between the training loss and validation loss suggest all models were overfitting. Therefore I simplified the model with the second grid search: the number of hidden layers = [1, 2, 3], neurons per layer = [10, 20, 30], and learning rate = [1e-3, 1e-4, 1e-5]. 
 
 #### Random forest regression
 
