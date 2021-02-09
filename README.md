@@ -23,7 +23,7 @@ The following text based attributes were dropped.
 
 The 'artists' attribute could be used via hot ones, but this would lead to a large number of input parameters. The dataset also has a 'year' attribute making 'release_data' somewhat redundent. 
 
-After the text baised attributes were remove, the data was passed through sklear-learn's standard scaler to normalize the data.
+After the text attributes were remove, the data was passed through sklear-learn's standard scaler to normalize the data.
 
 ### Model selection 
 
