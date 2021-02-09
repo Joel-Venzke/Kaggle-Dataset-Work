@@ -2,7 +2,9 @@
 working with the [Kaggle Spotify Dataset 1921-2020, 160k+ Tracks dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks)
 
 ## Overview
-This project was used to predict the populatrity of a song based on various attributes. By guessing the average, a root mean squared error (RMSE) of 21.87 is achived. This is the baseline for the models to beat.
+This project used Keras/TensorFlow, Scikit-Learn, Pandas, Numpy, and Matplotlib to predict the populatrity of a song based on various attributes. 
+
+By guessing the average of the data set for all songs, a root mean squared error (RMSE) of 21.87 is achived. This can be used a baseline to help understand model preformance.
 
 The current best algorithms are:
 1. Random forest - RMSE: 12.591 (0.035)
@@ -54,9 +56,10 @@ The DNN used for testing had 2 hidden layers with 30 nodes and a single output l
 
 For Hyperparameter tuning, I went with Random Forest and DNN models. Below are how I tuned the hyperparameters
 
-#### Random forest regression
-
 #### Deep Neural Network (DNN)
+The DNN was trained using Keras
+
+#### Random forest regression
 
 ### Generalization 
 
