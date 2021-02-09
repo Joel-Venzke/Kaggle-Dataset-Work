@@ -5,14 +5,10 @@ working with the [Kaggle Spotify Dataset 1921-2020, 160k+ Tracks dataset](https:
 This project was used to predict the populatrity of a song based on various attributes. By guessing the average, a root mean squared error (RMSE) of 21.87 is achived. This is the baseline for the models to beat.
 
 The current best algorithms are:
-1. Random forest
-  - RMSE: 12.591 (0.035)
-2. DNN
-  - RMSE: 13.56 (NA)
-3. Linear Regression
-  - RMSE: 17.172 (0.042)
-4. Linear SVR
-  - RMSE: 18.524 (0.088)
+1. Random forest - RMSE: 12.591 (0.035)
+2. DNN - RMSE: 13.56 (NA)
+3. Linear Regression - RMSE: 17.172 (0.042)
+4. Linear SVR - RMSE: 18.524 (0.088)
 
 ## Methods
 
