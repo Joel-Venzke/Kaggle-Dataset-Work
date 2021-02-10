@@ -7,10 +7,10 @@ This project uses tool from Keras/TensorFlow, Scikit-Learn, Pandas, Numpy, Tenso
 By guessing the average of the data set for all songs, a root mean squared error (RMSE) of 21.87 is achived. This can be used a baseline to help understand model preformance.
 
 The current best algorithms are:
-1. Random forest - RMSE: 12.591 (0.035)
-2. DNN - RMSE: 13.56 (NA)
-3. Linear Regression - RMSE: 17.172 (0.042)
-4. Linear SVR - RMSE: 18.524 (0.088)
+1. Random forest - Base RMSE: 12.591 (0.035)
+2. DNN - Base RMSE: 13.56 (NA) - Tuned RMSE: 12.94 (NA)
+3. Linear Regression - Base RMSE: 17.172 (0.042)
+4. Linear SVR - Base RMSE: 18.524 (0.088)
 
 ## Methods
 Prior to examining the data, duplicate rows were deleted and a testing set was set aside to be used later to measure how well the models generalize. 
@@ -77,8 +77,6 @@ For Hyperparameter tuning, I went with Random Forest and DNN models. Below are h
 The DNN was trained using Keras/TensorFlow and the training was monitored with a TensorBoard. The first round of tuning was a grid search with the number of hidden layers = [1, 2, 3], neurons per layer = [30, 100, 200], and learning rate = [1e-3, 1e-4, 1e-5]. The best model was 3 hidden layers, 200 neurons per layer and a learning rate of 1e-4 with a RMSE=13.055. 
 
 However, the large seperation between the training loss and validation loss suggest all models were overfitting. Therefore I simplified the model with the second grid search: the number of hidden layers = [1, 2, 3], neurons per layer = [10, 20, 30], and learning rate = [1e-3, 1e-4, 1e-5]. 
-
-next up try activation='selu', kernel_initializer='lecun_normal'
 
 #### Random forest regression
 
