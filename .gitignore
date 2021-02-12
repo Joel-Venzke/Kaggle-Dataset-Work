@@ -131,3 +131,9 @@ dmypy.json
 # logs and models
 models/
 spotify_pop_logs/
+
+# large datasets
+chest_xray/
+
+# macos stuff 
+.DS_Store
