@@ -1,9 +1,11 @@
 # Kaggle-Dataset-Work
 My projects working on various Kaggle datasets
 
-# Project overviews
+# Projects
+## Pneumonia classification form Chest X-Ray Images (Feb 12, 2021 - Present)
+Working with the [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
-## Spotify dataset (Feb 8, 2021 - Feb 12, 2021)
+## Spotify song populartity regression (Feb 8, 2021 - Feb 12, 2021)
 Working with the [Kaggle Spotify Dataset 1921-2020, 160k+ Tracks dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks)
 
 Trained RandomForest, DNN, LinearRegression, and LinearSVR to predict songs populartiy. Obtained a RMSE error of 12.300 with a tuned random fortest regressor compared to 21.85 when guessing the training data average.
