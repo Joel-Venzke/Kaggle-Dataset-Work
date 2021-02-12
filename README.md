@@ -2,7 +2,7 @@
 My projects working on various Kaggle datasets
 
 # Projects
-## Pneumonia classification form Chest X-Ray Images (Feb 12, 2021 - Present)
+## Pneumonia classification form chest x-ray images (Feb 12, 2021 - Present)
 Working with the [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 ## Spotify song populartity regression (Feb 8, 2021 - Feb 12, 2021)
