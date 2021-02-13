@@ -63,12 +63,12 @@ The results for LinearRegression were not much better than guessing the average.
 
 
 #### RandomForest - RMSE: 12.591 (0.035)
-The RandomForest model preformed the best for initial testing. Could still use some work. 
+The RandomForest model preformed the best for initial testing. The model could still use some work. 
 
 ![alt text](rand_forest_reg.png)
 
 #### LinearSVR - RMSE: 18.524 (0.088)
-The LinearSVR had the worst performance of all models in terms of RMSE. It looks to be due to over prediction the popularity of unpopular songs. The clear separation on the left side of the graph suggests the data is not linearly separable and using other kernels may help. However, if over predicting unpopular songs is not an issue for the given application, the LinearSVR model does capture the trend for more popular songs quite well. That being said, it did not make the short list of models for tuning.
+The LinearSVR had the worst performance of all models in terms of RMSE. It looks to be due to over prediction the popularity of unpopular songs. The clear separation on the left side of the graph suggests the data is not linearly separable, but using other kernels may help. If over predicting unpopular songs is not an issue for the given application, the LinearSVR model does capture the trend for more popular songs quite well. That being said, it did not make the short list of models for tuning.
 
 ![alt text](svr.png)
 
