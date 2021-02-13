@@ -1,5 +1,2 @@
 theme: jekyll-theme-modernist
-markdown: redcarpet
 title: [Joel Venzke's Portfolio](https://joel-venzke.github.io/Kaggle-Dataset-Work/)
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
