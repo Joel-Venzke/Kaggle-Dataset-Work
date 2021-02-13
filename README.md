@@ -3,7 +3,7 @@ My projects working on various Kaggle datasets
 
 # Projects
 ## Pneumonia classification from chest x-ray images (Feb 12, 2021 - Present)
-Working with the [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+Working with the [Chest X-Ray Images (Pneumonia) dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 See the current [writeup](pneumonia_xray_image/README.md) and [jupyter notebook](pneumonia_xray_image/pneumonia_data_exp_and_model_training.ipynb) for more details.
 
