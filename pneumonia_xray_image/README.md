@@ -11,6 +11,14 @@ Working with the [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/paultim
 
 ### Data Exploration
 
+![alt text](avg_normal_no_crop.png)
+![alt text](avg_bact_no_crop)
+![alt text](avg_virus_no_crop.png)
+
+![alt text](avg_normal_center_crop.png)
+![alt text](avg_bact_center_crop)
+![alt text](avg_virus_center_crop.png)
+
 ### Data Pipeline
 
 ### Model selection 
