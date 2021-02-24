@@ -1,4 +1,4 @@
-# Pneumonia classification form chest x-ray images 
+# Pneumonia classification from chest x-ray images 
 Working with the [Chest X-Ray Images (Pneumonia) dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 This project is currently being worked on.
